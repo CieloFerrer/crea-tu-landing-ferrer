@@ -1,10 +1,10 @@
-# NavegaLasRutas + Ferrer
+# NavegaLasRutas+Ferrer
 
 Este proyecto corresponde a la **Entrega 2 del curso de React Js**, donde se implementa la navegación entre vistas utilizando **React Router**.  
-Forma parte de la evolución del proyecto **Crea tu Landing - Ferrer**.
+Forma parte de la evolución del proyecto **Crea tu Landing-Ferrer**.
 
 
-## 🚀 Objetivo
+## Objetivo
 
 Implementar la funcionalidad de **navegación entre las diferentes vistas** de una tienda online.  
 El usuario puede:
@@ -14,7 +14,7 @@ El usuario puede:
 - Visualizar una página 404 para rutas inexistentes.
 
 
-## 🧩 Componentes principales
+## Componentes principales
 
 - `NavBar.jsx` → Barra de navegación con enlaces a categorías y carrito.  
 - `CartWidget.jsx` → Ícono del carrito de compras.  
@@ -24,7 +24,7 @@ El usuario puede:
 - `data/productos.js` → Simulación de base de datos con Promises (asíncrono con retardo).
 
 
-## 🧠 Conceptos aplicados
+## Conceptos aplicados
 
 - Rutas dinámicas con **React Router DOM** (`useParams` y `<Routes>` / `<Route>`).
 - Promesas simulando llamadas a datos con retardo (`setTimeout`).
