@@ -2,36 +2,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1c1c1c;
-  padding: 10px 40px;
+  background-color: #1A1A1A;
+  padding: 15px 40px;
 }
 
 .navbar img {
-  height: 50px;
+  height: 40px;
 }
 
-.nav-links {
+.navbar-links {
   display: flex;
-  gap: 2rem;
+  gap: 25px;
 }
 
-.nav-links a {
-  color: white;
+.navbar-links a {
+  color: #F8F8F8;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
+  font-size: 1.05rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #00bfff;
+.navbar-links a:hover {
+  color: #1A1A1A;
+  background-color: #B8181E;
 }
 
 .cart-widget {
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #B8181E;
+  cursor: pointer;
 }
 
-.nav-links a:visited {
-  color: white; 
+.cart-icon {
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.cart-count {
+  font-size: 0.9rem;
+  color: #F8F8F8;
 }

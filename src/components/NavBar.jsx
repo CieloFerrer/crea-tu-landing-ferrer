@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
-import logo from "../assets/logo.png"; // Asegurate de tener tu logo aquí
+import logo from "../assets/logo.png";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -11,8 +11,8 @@ const NavBar = () => {
       </Link>
       <nav className="navbar-links">
         <Link to="/categoria/ropa">Ropa</Link>
-        <Link to="/categoria/pesca">Pesca</Link>
         <Link to="/categoria/accesorios">Accesorios</Link>
+        <Link to="/categoria/pesca">Pesca</Link>
       </nav>
       <CartWidget />
     </header>

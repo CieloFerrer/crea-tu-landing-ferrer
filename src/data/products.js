@@ -10,7 +10,7 @@ const productos = [
     nombre: "Remera Outdoor",
     descripcion: "Remera técnica para actividades al aire libre.",
     precio: 12000,
-    categoria: "indumentaria",
+    categoria: "ropa",
     imagen: remera,
   },
   {
@@ -26,7 +26,7 @@ const productos = [
     nombre: "Campera Softshell",
     descripcion: "Campera impermeable y cortaviento para montaña.",
     precio: 35000,
-    categoria: "indumentaria",
+    categoria: "ropa",
     imagen: campera,
   },
   {
@@ -42,12 +42,11 @@ const productos = [
     nombre: "Botella de acero",
     descripcion: "Botella térmica para bebidas frías o calientes.",
     precio: 9000,
-    categoria: "equipamiento",
+    categoria: "accesorios",
     imagen: botella,
   },
 ];
 
-// 🔄 Simula una llamada asincrónica con Promises
 export const getProductos = () => {
   return new Promise((resolve) => {
     setTimeout(() => {

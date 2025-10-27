@@ -1,58 +1,65 @@
 .item-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  padding: 10px;
   justify-items: center;
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   text-align: center;
-  padding: 1rem;
-  transition: transform 0.2s ease-in-out;
-  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  width: 240px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .card h3 {
-  margin: 10px 0 5px;
+  margin: 15px 0 5px;
   font-size: 1.2rem;
-  color: #333;
+  color: #1A1A1A;
 }
 
 .card p {
-  margin: 0;
+  margin: 0 0 20px;
+  font-size: 1.1rem;
   font-weight: bold;
-  color: #444;
+  color: #B8181E;
 }
 
 .btn-detalle {
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #0077cc;
+  padding: 10px 20px;
+  background-color: #B8181E;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn-detalle:hover {
-  background-color: #005fa3;
+  background-color: #000000;
 }

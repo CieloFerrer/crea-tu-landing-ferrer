@@ -17,7 +17,9 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <div>
-      <h2>{greeting}</h2>
+      <h2 style={{ textAlign: 'center', marginTop: '40px', color: '#1A1A1A', textTransform: 'uppercase' }}>
+        {categoriaId ? categoriaId : greeting}
+      </h2>
       <ItemList productos={productos} />
     </div>
   );
