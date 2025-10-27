@@ -1,25 +1,22 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.png"; // Asegurate de tener tu logo aquí
 import "./NavBar.css";
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-left">
-        <img src={logo} alt="Logo" className="nav-logo" />
-        <h2 className="nav-title">Mi Tienda</h2>
-      </div>
-
-      <div className="nav-links">
-        <a href="#" className="nav-link">Inicio</a>
-        <a href="#" className="nav-link">Productos</a>
-        <a href="#" className="nav-link">Contacto</a>
-      </div>
-
+    <header className="navbar">
+      <Link to="/" className="navbar-logo">
+        <img src={logo} alt="Valle Outdoors" />
+      </Link>
+      <nav className="navbar-links">
+        <Link to="/categoria/ropa">Ropa</Link>
+        <Link to="/categoria/pesca">Pesca</Link>
+        <Link to="/categoria/accesorios">Accesorios</Link>
+      </nav>
       <CartWidget />
-    </nav>
+    </header>
   );
-}
+};
 
 export default NavBar;

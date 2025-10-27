@@ -1,13 +1,26 @@
-import React from "react";
-import "./ItemListContainer.css";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getProductos, getProductosPorCategoria } from "../data/products";
+import ItemList from "./ItemList";
 
-function ItemListContainer({ greeting }) {
+const ItemListContainer = ({ greeting }) => {
+  const [productos, setProductos] = useState([]);
+  const { categoriaId } = useParams();
+
+  useEffect(() => {
+    const asyncFunc = categoriaId ? getProductosPorCategoria : getProductos;
+
+    asyncFunc(categoriaId)
+      .then((res) => setProductos(res))
+      .catch((error) => console.log(error));
+  }, [categoriaId]);
+
   return (
-    <div className="item-container">
-      <h1 className="item-title">{greeting}</h1>
-      <p className="item-subtitle">Explorá nuestros productos destacados</p>
+    <div>
+      <h2>{greeting}</h2>
+      <ItemList productos={productos} />
     </div>
   );
-}
+};
 
 export default ItemListContainer;
